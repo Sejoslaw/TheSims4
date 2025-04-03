@@ -7367,7 +7367,7 @@ Total Homed Households: 0</li>
 </ul>
 </div>
 <h2>
-MC Command Center Last Exception Apr 02 - 14:32:34 Summary</h2>
+MC Command Center Last Exception Apr 03 - 07:22:36 Summary</h2>
 <div class="summaryDiv">
 <ul style="list-style: none;padding:5px;">
 <li style="border:none;">
@@ -7418,7 +7418,7 @@ tm_be_class_exceptions</td>
 <td>
 147</td>
 <td>
-&lt;sims4.log.Logger object at 0x00007FFF8B857290&gt;</td>
+&lt;sims4.log.Logger object at 0x00007FFF89D1B2D0&gt;</td>
 </tr>
 <tr>
 <td />
@@ -7439,7 +7439,7 @@ _on_exception_occurrence</td>
 <td>
 18</td>
 <td>
-&lt;sims4.log.Logger object at 0x00007FFF8B857290&gt;</td>
+&lt;sims4.log.Logger object at 0x00007FFF89D1B2D0&gt;</td>
 </tr>
 <tr>
 <td />
@@ -7450,7 +7450,7 @@ __init__</td>
 <td>
 40</td>
 <td>
-&lt;sims4.tuning.tunable_perf.TuningAttrCleanupHelper object at 0x00007FFF4997EEA8&gt;</td>
+&lt;sims4.tuning.tunable_perf.TuningAttrCleanupHelper object at 0x00007FFF8844AE60&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -7461,39 +7461,38 @@ Full Error CallStack (Click to expand/collapse)</h3>
 <ul style="list-style: none">
 <li>
   File 'T:\InGame\Gameplay\Scripts\Server\areaserver.py', line 130, in wrapped [
-    finally_wrap : &lt;function synchronous.__call__.&lt;locals&gt;.wrapped.&lt;locals&gt;.finally_wrap at 0x00007FFF90351320&gt;,
-    run_callback : &lt;function synchronous.__call__.&lt;locals&gt;.wrapped.&lt;locals&gt;.run_callback at 0x00007FFF91BF6710&gt;,
-              fn : &lt;function c_api_client_connect at 0x00007FFF98DADC20&gt;,
-            self : &lt;areaserver.synchronous object at 0x00007FFF98DABBD8&gt;,
-            args : (3, 1000385758103, 669932905675194168, 'Sejoslaw', 669932905675193737, &lt;built-in method client_connect_completed of NoneType object at 0x000000001E2FC960&gt;, 669932905648685106, 'en-us', False)]</li>
+    finally_wrap : &lt;function synchronous.__call__.&lt;locals&gt;.wrapped.&lt;locals&gt;.finally_wrap at 0x00007FFFA1D0FEF0&gt;,
+    run_callback : &lt;function synchronous.__call__.&lt;locals&gt;.wrapped.&lt;locals&gt;.run_callback at 0x00007FFFA1D0FF80&gt;,
+              fn : &lt;function c_api_client_connect at 0x00007FFF9768DC20&gt;,
+            self : &lt;areaserver.synchronous object at 0x00007FFF9768BB48&gt;,
+            args : (3, 1000385758103, 64198768671653911, 'Sejoslaw', 1073005085218157584, &lt;built-in method client_connect_completed of NoneType object at 0x000000001E2FC960&gt;, 0, 'en-us', False)]</li>
 <li>
   File 'T:\InGame\Gameplay\Scripts\Server\areaserver.py', line 126, in finally_wrap [
-            args : (3, 1000385758103, 669932905675194168, 'Sejoslaw', 669932905675193737, &lt;built-in method client_connect_completed of NoneType object at 0x000000001E2FC960&gt;, 669932905648685106, 'en-us', False),
+            args : (3, 1000385758103, 64198768671653911, 'Sejoslaw', 1073005085218157584, &lt;built-in method client_connect_completed of NoneType object at 0x000000001E2FC960&gt;, 0, 'en-us', False),
              ret : -1,
-              fn : &lt;function c_api_client_connect at 0x00007FFF98DADC20&gt;,
-    run_callback : &lt;function synchronous.__call__.&lt;locals&gt;.wrapped.&lt;locals&gt;.run_callback at 0x00007FFF91BF6710&gt;]</li>
+              fn : &lt;function c_api_client_connect at 0x00007FFF9768DC20&gt;,
+    run_callback : &lt;function synchronous.__call__.&lt;locals&gt;.wrapped.&lt;locals&gt;.run_callback at 0x00007FFFA1D0FF80&gt;]</li>
 <li>
   File 'T:\InGame\Gameplay\Scripts\Server\areaserver.py', line 356, in c_api_client_connect [
        session_id : 3,
        account_id : 1000385758103,
-     household_id : 669932905675194168,
+     household_id : 64198768671653911,
      persona_name : Sejoslaw,
-          zone_id : 669932905675193737,
+          zone_id : 1073005085218157584,
          callback : &lt;built-in method client_connect_completed of NoneType object at 0x000000001E2FC960&gt;,
-    active_sim_id : 669932905648685106,
            locale : en-us,
           account : ID: 1000385758103; SaveSlotID: 0; locale:en-us,
-             zone : &lt;Zone ID: 0x94c146da21d7d89&gt;,
+             zone : &lt;Zone ID: 0xee41470a29db410&gt;,
            client : &lt;Client 0x3&gt;]</li>
 <li>
   File 'D:\Projects\Sims 4 Modding\Mods\TMex Mods 2018\Tmex-AlwaysFullEditMode\PublicUnlock.py', line 7, in _unlock [
-               args : (&lt;Zone ID: 0x94c146da21d7d89&gt;, &lt;Client 0x3&gt;),
-       new_function : &lt;function tm_update_check_injection at 0x00007FFF8B86EF80&gt;,
-    target_function : &lt;function Zone.on_client_connect at 0x00007FFF8B86EB00&gt;]</li>
+               args : (&lt;Zone ID: 0xee41470a29db410&gt;, &lt;Client 0x3&gt;),
+       new_function : &lt;function tm_update_check_injection at 0x00007FFF89D33F80&gt;,
+    target_function : &lt;function Zone.on_client_connect at 0x00007FFF89D33B00&gt;]</li>
 <li>
   File 'D:\Projects\Sims 4 Modding\Mods\TMex Mods 2022\Tmex-BetterExceptions\tmex_BetterExceptions.py', line 89, in tm_update_check_injection [
-    target : &lt;function Zone.on_client_connect at 0x00007FFF8B86EB00&gt;,
-      self : &lt;Zone ID: 0x94c146da21d7d89&gt;,
+    target : &lt;function Zone.on_client_connect at 0x00007FFF89D33B00&gt;,
+      self : &lt;Zone ID: 0xee41470a29db410&gt;,
     client : &lt;Client 0x3&gt;]</li>
 <li>
   File 'D:\Projects\Sims 4 Modding\Mods\TMex Mods 2022\Tmex-BetterExceptions\tmex_BetterExceptions.py', line 131, in tm_be_show_welcome [
@@ -7501,8 +7500,8 @@ Full Error CallStack (Click to expand/collapse)</h3>
 <li>
   File 'D:\Projects\Sims 4 Modding\Mods\TMex Mods 2022\Tmex-BetterExceptions\tmex_BE_UI.py', line 187, in be_show_notification [
                       client : &lt;Client 0x3&gt;,
-             localized_title : &lt;function be_show_notification.&lt;locals&gt;.&lt;lambda&gt; at 0x00007FFF90351710&gt;,
-              localized_text : &lt;function be_show_notification.&lt;locals&gt;.&lt;lambda&gt; at 0x00007FFF921EBE60&gt;,
+             localized_title : &lt;function be_show_notification.&lt;locals&gt;.&lt;lambda&gt; at 0x00007FFF985D8440&gt;,
+              localized_text : &lt;function be_show_notification.&lt;locals&gt;.&lt;lambda&gt; at 0x00007FFF972C0DD0&gt;,
     button1_response_command : ImmutableSlots({'arguments': (), 'command': 'tmex_be_launch_site'}),
             button1_response : UiDialogResponse(audio_event_name=None, build_buy_filters=None, button_icon=None, dialog_response_id=ButtonType.DIALOG_RESPONSE_OK, loots_for_response=None, response_command=ImmutableSlots({'arguments': (), 'command': 'tmex_be_launch_site'}), sort_order=0, tooltip_text=None, tutorial_id=None, ui_message_name=None, ui_request=UiDialogUiRequest.SEND_COMMAND),
     button2_response_command : ImmutableSlots({'arguments': (), 'command': 'tmex_be_launch_patreon'}),
@@ -7524,28 +7523,28 @@ If you find BE helpful, please consider supporting me on Patreon. Thank you!&lt;
                        title : Welcome to Better Exceptions v3.12]</li>
 <li>
   File 'D:\Projects\Sims 4 Modding\Mods\TMex Mods 2018\Tmex-AlwaysFullEditMode\PublicUnlock.py', line 7, in _unlock [
-               args : (&lt;sims4.log.Logger object at 0x00007FFF8B857290&gt;, '{}', "'TuningAttrCleanupHelper' object attribute 'register_for_cleanup' is read-only"),
+               args : (&lt;sims4.log.Logger object at 0x00007FFF89D1B2D0&gt;, '{}', "'TuningAttrCleanupHelper' object attribute 'register_for_cleanup' is read-only"),
              kwargs : {'owner': 'BetterExceptions'},
-       new_function : &lt;function tm_be_class_exceptions at 0x00007FFF9130B3B0&gt;,
-    target_function : &lt;function Logger.exception at 0x00007FFF8D4448C0&gt;]</li>
+       new_function : &lt;function tm_be_class_exceptions at 0x00007FFF91B9D3B0&gt;,
+    target_function : &lt;function Logger.exception at 0x00007FFF8BA988C0&gt;]</li>
 <li>
   File 'D:\Projects\Sims 4 Modding\Mods\TMex Mods 2022\Tmex-BetterExceptions\tmex_BetterExceptions_Hooks.py', line 147, in tm_be_class_exceptions [
-     target : &lt;function Logger.exception at 0x00007FFF8D4448C0&gt;,
-       self : &lt;sims4.log.Logger object at 0x00007FFF8B857290&gt;,
+     target : &lt;function Logger.exception at 0x00007FFF8BA988C0&gt;,
+       self : &lt;sims4.log.Logger object at 0x00007FFF89D1B2D0&gt;,
     message : {},
        args : ("'TuningAttrCleanupHelper' object attribute 'register_for_cleanup' is read-only",),
      kwargs : {'owner': 'BetterExceptions'},
        item : 'TuningAttrCleanupHelper' object attribute 'register_for_cleanup' is read-only]</li>
 <li>
   File 'T:\InGame\Gameplay\Scripts\Server\sims\masked\v184e\injector.py', line 26, in _wrapped_function [
-                 args : (&lt;sims4.log.Logger object at 0x00007FFF8B857290&gt;, '{}', "'TuningAttrCleanupHelper' object attribute 'register_for_cleanup' is read-only"),
+                 args : (&lt;sims4.log.Logger object at 0x00007FFF89D1B2D0&gt;, '{}', "'TuningAttrCleanupHelper' object attribute 'register_for_cleanup' is read-only"),
                kwargs : {'owner': 'BetterExceptions'},
-         new_function : &lt;function _on_exception_occurrence at 0x00007FFF8D444C20&gt;,
-    original_function : &lt;function Logger.exception at 0x00007FFFDC04AB00&gt;]</li>
+         new_function : &lt;function _on_exception_occurrence at 0x00007FFF8BA98C20&gt;,
+    original_function : &lt;function Logger.exception at 0x00007FFFDC9CAB00&gt;]</li>
 <li>
   File 'T:\InGame\Gameplay\Scripts\Server\sims\masked\v184e\exceptions_feedback.py', line 18, in _on_exception_occurrence [
-    original : &lt;function Logger.exception at 0x00007FFFDC04AB00&gt;,
-        self : &lt;sims4.log.Logger object at 0x00007FFF8B857290&gt;,
+    original : &lt;function Logger.exception at 0x00007FFFDC9CAB00&gt;,
+        self : &lt;sims4.log.Logger object at 0x00007FFF89D1B2D0&gt;,
         args : ('{}', "'TuningAttrCleanupHelper' object attribute 'register_for_cleanup' is read-only"),
       kwargs : {'owner': 'BetterExceptions'}]</li>
 <li>
